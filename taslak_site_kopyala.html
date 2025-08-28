@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buse-acar-portfolyo</title>
+    <style>
+      html {
+        scroll-behavior: smooth; /* yumuşak geçiş */
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #fff0f6, #ffe0ec); /* sayfa genel arka plan */
+        color: #333;
+        text-align: center;
+      }
+
+      header {
+        background: linear-gradient(135deg, #ff4b2b, #ff416c); /* canlı pembe degrade navbar */
+        color: white;
+        padding: 20px 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: fixed; /* sabit navbar */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      nav {
+        margin-top: 10px;
+        color: #fff;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 500;
+        transition: opacity 0.3s;
+      }
+
+      nav a:hover {
+        opacity: 0.7;
+      }
+
+      /* içerikler navbar altında kalsın diye padding */
+      section {
+        padding: 100px 20px 60px;
+      }
+
+      .profile-section {
+        padding-top: 120px; /* header ile çakışmasın */
+        background: linear-gradient(135deg, #ffe0ec, #fff5f9); /* profil bölümü degrade */
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #ff416c; /* profil fotoğrafı çerçeve uyumlu pembe */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      h2 {
+        margin: 20px 0 5px;
+        font-size: 1.8rem;
+        color: #ff416c;
+      }
+
+      p.role {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #555;
+      }
+      .about-section {
+        padding: 100px 40px;
+        background: #fff5f9; /* hakkımda bölümü pastel pembe */
+      }
+
+      .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      .about-left {
+        flex: 1;
+        text-align: center;
+      }
+
+      .about-pic {
+        width: 500px;
+        height: 500px;
+        border-radius: 15%;
+        object-fit: cover;
+        border: 4px solid #ff4b2b; /* fotoğraf çerçevesi */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-right {
+        flex: 2;
+        background: linear-gradient(135deg, #fff0f6, #ffe0ec); /* sağ kutu degrade */
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        text-align: left;
+      }
+
+      .about-right h2 {
+        font-size: 2rem;
+        color: #ff416c;
+        margin-bottom: 20px;
+      }
+
+      .about-right p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+
+      .about-right ul {
+        padding-left: 20px;
+        margin: 15px 0;
+      }
+
+      .about-right li {
+        margin-bottom: 8px;
+        color: #444;
+      }
+      .about-list-box {
+        border: 4px dashed transparent;
+        border-image: url("https://www.transparenttextures.com/patterns/flowers.png")
+          30 round;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 12px;
+        background: #fff0f6;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .about-list-box ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .about-list-box li {
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: #333;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .about-list-box li::before {
+        content: "🌸";
+        position: absolute;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🌸BUSE ACAR PORTFOLYO🌸</h1>
+      <nav>
+        <a href="#profil">Profil</a>
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </header>
+
+    <section id="profil" class="profile-section">
+  <img src="images/BusePp.jpg" alt="Profil Fotoğrafı" class="profile-pic" />
+  <h2>Buse ACAR</h2>
+  <p class="role">İçerik Üreticisi / Influencer</p>
+
+  </div>
+</section>
+
+
+    <section id="hakkimda" class="about-section">
+      <div class="about-container">
+        <!-- Sol taraf (Fotoğraf) -->
+        <div class="about-left">
+          <img
+            src="images/Hakkimda_Buse.jpeg"
+            alt="Hakkımda Fotoğraf"
+            class="about-pic"
+          />
+        </div>
+
+        <!-- Sağ taraf (Metin) -->
+        <div class="about-right">
+          <h2>Hakkımda</h2>
+          <p>
+            Merhaba,
+            <br /><br />
+            Ben <strong>Buse Acar</strong>. Instagram’da aktif olarak içerik
+            üretiyorum ve takipçilerime ilham vermek, yeni ürün ve markaları
+            tanıtmak için düzenli olarak paylaşımlar yapıyorum. Kendi tarzımda
+            vlog, beraber hazırlanma, kombin önerileri, kutu açılımları ve ürün
+            tanıtımları gibi içerikler üretiyorum.
+          </p>
+          <p>
+            Amacım, takipçilerime samimi ve güvenilir bir şekilde ürünleri
+            tanıtmak ve onlara deneyimlerimi en doğal haliyle aktarmak.
+          </p>
+          <p>
+            Sizin markanızla güzel ve verimli bir iş birliği
+            gerçekleştirebileceğimize inanıyorum. İçeriklerimde markanızı ön
+            plana çıkaracak, takipçilerimin dikkatini çekecek ve aynı zamanda
+            markanıza değer katacak bir yaklaşım benimsemek isterim.
+          </p>
+          <div class="about-list-box">
+            <ul>
+              <li>Markanıza uygun konseptte özel video içerikleri</li>
+              <li>Kutu açılımı ve ürün deneyimi paylaşımları</li>
+              <li>Kombin ve günlük kullanım önerileri</li>
+              <li>Etkileşimi artıracak samimi içerik kurguları</li>
+            </ul>
+          </div>
+
+          <p>
+            Benimle iş birliği yapmayı düşünürseniz, birlikte çok başarılı
+            projelere imza atabileceğimize eminim. Sizden dönüş almayı çok
+            isterim.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri">
+      <!-- 📌 GALERİ KISMI -->
+<section id="gallery" class="gallery">
+  <h2>🎥 Galeri</h2>
+  <div class="video-gallery">
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Kremi_Beauty.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">💄 Kremi Beauty</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Be_You.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">🌸 Be You</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Be_You2.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">🌈 Be You (2)</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Ceiles.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">💎 Ceiles</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Lcw.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">👕 Lcw</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Garnier.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">🌿 Garnier</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Kiko.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">💋 Kiko</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Loreal.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">👑 Loreal</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Mango.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">👜 Mango</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/New_Balance.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">👟 New Balance</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Sevilen_Tekstil.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">🧵 Sevilen Tekstil</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Shevec.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">🕶️ Shevec</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Zara.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">👗 Zara</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Beraber.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">🤝 Beraber Hazırlanalım</h3>
+    </div>
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Beraber2.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">💃 Beraber Hazırlanalım (2)</h3>
+    </div>
+
+
+
+    <!-- Video Kartı -->
+    <div class="video-card">
+      <div class="video-frame">
+        <video controls>
+          <source src="images/Beraber3.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+      </div>
+      <h3 class="video-title">🎀 Beraber Hazırlanalım (3)</h3>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim" class="contact-section">
+  <h2 style="font-size:28px; margin-bottom:20px; color:white;">Benimle Birlikte Çalışmak İster misiniz?</h2>
+  <p class="subtitle">Markanızı takipçilerime en samimi ve etkili şekilde tanıtmak için birlikte çalışalım.</p>
+
+  <div class="contact-cards">
+    <div class="contact-card">
+      <h3>📧 E-posta</h3>
+      <p><a href="mailto:buseacar10@gmail.com">buseacar10@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <h3>📞 Telefon</h3>
+      <p><a href="tel:+905438299494">+90 (543) 829 94 94</a></p>
+    </div>
+    <div class="contact-card">
+      <h3>📸 Instagram</h3>
+      <p>
+        <a href="https://www.instagram.com/buuuseeaacaar?igsh=cnpicXZpNHFuYTMx" target="_blank">
+          @buuuseeaacaar
+        </a>
+      </p>
+    </div>
+    <div class="contact-card special-card">
+      <h3>Hemen İletişime Geçin!</h3>
+      <p>
+        Markanız için özel içerikler üretmek ve <strong>birlikte çalışmamız</strong> halinde harika projeler ortaya çıkaracağımıza inanıyorum. Sizden haber almayı dört gözle bekliyorum!
+      </p>
+      <ul>
+        <li>Hızlı yanıt garantisi</li>
+        <li>Profesyonel iş birliği</li>
+        <li>Yaratıcı içerik çözümleri</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer style="background: linear-gradient(135deg, #ffffff, #ffe8f8); padding:40px 0; text-align:center; color: rgb(0, 0, 0); font-family:sans-serif;">
+    <!-- Gradient bar -->
+    <div style="height:6px; width:80%; margin:0 auto 20px; background: linear-gradient(90deg, #000000, #000000); border-radius:3px;"></div>
+    
+    <!-- Unvan -->
+    <p style="margin:10px 0; font-size:16px;">Influencer & İçerik Üreticisi</p>
+    
+    <!-- Sosyal ikonlar -->
+    <div style="margin:20px 0;">
+        <a href="https://instagram.com" target="_blank" style="margin:0 10px; display:inline-block;">
+            <img src="images/instagram1.png" alt="Instagram" style="width:40px; height:40px; border-radius:50%;">
+        </a>
+        <a href="mailto:email@example.com" style="margin:0 10px; display:inline-block;">
+            <img src="images/mail.png" alt="Email" style="width:40px; height:40px; border-radius:50%;">
+        </a>
+        <a href="tel:+901234567890" style="margin:0 10px; display:inline-block;">
+            <img src="images/telefon.png" alt="Phone" style="width:40px; height:40px; border-radius:50%;">
+        </a>
+    </div>
+    
+    <!-- Telif hakkı -->
+    <p style="font-size:14px; color:#000000;">© 2025 Buse Acar. Tüm hakları saklıdır.</p>
+</footer>
+
+
+
+<style>
+.contact-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* kontakt bölümü degrade */
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-section .subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-card {
+  background: rgba(255, 224, 236, 0.9); /* açık pembe ton */
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-card a {
+  color: #e75480;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.contact-card li {
+  margin-bottom: 5px;
+}
+
+.special-card {
+  background: linear-gradient(135deg, #eba599, #ff416c); /* öne çıkan özel kart */
+  color: white;
+  width: 300px;
+}
+</style>
+
+
+<!-- 🎨 TASARIM (CSS) -->
+<style>
+
+/* 📱 Mobil görünüm düzenlemeleri */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 0.85rem;
+  }
+
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+
+  .about-container {
+    flex-direction: column; /* yan yana değil, alt alta */
+    gap: 20px;
+    text-align: center;
+  }
+
+  .about-pic {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .about-right {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-right h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-right p {
+    font-size: 0.95rem;
+  }
+
+  .about-list-box {
+    padding: 15px;
+  }
+
+  .about-list-box li {
+    font-size: 0.9rem;
+  }
+
+  /* 🎥 Mobil video galerisi 4x4 */
+  .gallery {
+  padding: 80px 20px;
+  background: #fff5f9;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #e75480;
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 5px;
+  justify-content: center;
+  align-items: start;
+}
+
+.video-card {
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding-bottom: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.video-frame video {
+    display: none; /* videoyu gizle */
+  }
+  .video-frame {
+    background: url('images/kapak.png') center center / cover no-repeat;
+  }
+
+}
+
+.video-title {
+  margin-top: 3px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d63384;
+  background: linear-gradient(90deg, #ffe0ec, #fff5f9);
+  padding: 3px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+
+
+
+
+.gallery {
+  padding: 80px 20px;
+  background: #fff5f9;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #e75480;
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: start;
+}
+
+.video-card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.video-frame {
+  border: 6px solid #ffb6c1; /* galeri video çerçeve pembe ton */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-frame video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-title {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d63384;
+  background: linear-gradient(90deg, #ffe0ec, #fff5f9);
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+</style>
